@@ -169,6 +169,26 @@ nav a:hover {
     background: #e5b800;
 }
 
+/* Features Section Styles */
+.features {
+    color: #f4f4f4;
+    background: #111;
+    padding: 50px 20px;
+}
+
+.features .feature {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features h3 {
+    font-size: 2em;
+}
+
+.features p {
+    font-size: 1.1em;
+}
+
 /* Language Style  */
 .language {
     color: white;
@@ -200,12 +220,12 @@ nav a:hover {
 
 footer {
     background: #333;
-    color: white;
+    color: white;    
     text-align: center;
     padding: 10px 20px;
 }
 
-/* Responsiveness, we'll discuss this when we reach tailwind
+/* Responsiveness
 @media (width < 1200px) {
     .heroContainer div:has(img) {
         width: 66.66666667%;
@@ -223,8 +243,14 @@ footer {
     .language .container {
         grid-template-columns: 1fr 1fr;
     }
-}
+    .features h3 {
+        font-size: 1.5em;
+    }
 
+    .features p {
+        font-size: 1em;
+    }
+}
 @media (max-width: 768px) {
     .hero {
         padding-block: 40px;
@@ -234,11 +260,25 @@ footer {
         font-size: 1em;
     }
     
+    .features {
+        padding: 30px 20px;
+    }
+    
+    .features .feature {
+        margin-bottom: 15px;
+    }
+    .features h3 {
+    font-size: 1.2em;
+    }
+
+    .features p {
+        font-size: .75em;
+    }
     .verticalCenter > div:has(.navLink) {
         display: none;
     }
     .navContainer {
-       max-width: 600px;
+    max-width: 600px;
     }
     .heroContainer {
         flex-direction: column;
@@ -252,8 +292,9 @@ footer {
     .heroContainer div:has(img) {
         width: 100%;
     }
-    .language .languagePanel {
+    .language .language_panel {
         grid-template-columns: max-content 1fr max-content 1fr;
     }
 }
- */
+
+*/
